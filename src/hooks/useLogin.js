@@ -14,7 +14,7 @@ export const useLogin = () => {
 
         //sign the user out
         try {
-            const res = await projectAuth.signInWithUserAndPassword(email, password)
+            const res = await projectAuth.signInWithEmailAndPassword(email, password)
 
             //dispatch logout action
             dispatch({ type: 'LOGIN', payload: res.user })
