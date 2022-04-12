@@ -1,10 +1,18 @@
 import styles from './Home.module.css'
 
 import React from 'react'
+import TransactionForm from './TransactionForm'
 
 const Home = () => {
     return (
-        <div>Home</div>
+        <div className={styles.container}>
+            <div className={styles.content}>
+                transaction list
+            </div>
+            <div className={styles.sidebar}>
+                <TransactionForm />
+            </div>
+        </div>
     )
 }
 
